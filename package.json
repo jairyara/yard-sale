@@ -1,0 +1,25 @@
+{
+  "name": "yard-sale",
+  "version": "1.0.0",
+  "description": "Project frontend development",
+  "scripts": {
+    "css": "postcss src/css/style.pcss -o public/css/style.css",
+    "css-watch": "postcss --watch src/css/style.pcss -o public/css/style.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browserslist": "^4.17.6",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
+    "postcss-nesting": "^9.0.0"
+  },
+  "browserslist": [
+    "last 1 versions"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "Jair Yara",
+    "email": "jair.yara11@gmail.com",
+    "url": "https://www.jairyara.com"
+  }
+}
