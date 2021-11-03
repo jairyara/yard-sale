@@ -1,8 +1,146 @@
-p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+/**
+* General styles
+**/
+
+:root {
+
+    /**
+    * Colors
+    **/
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+    --gray: #797979;
+
+    /**
+    * Font size
+    **/
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+    /**
+    * Font weight
+    **/
+
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
 }
 
-h1 {
-    font-size: 35px
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/**
+* Components
+**/
+
+.label-form {
+    font-size: var(--sm);
+    font-weight: var(--bold);
+}
+
+.input-form {
+    padding: 10px 8px;
+    height: 45px;
+    font-size: var(--md);
+    font-weight: var(--regular);
+    color: var(--dark);
+    border: 1px solid var(--text-input-field);
+    background-color: var(--text-input-field);
+    border-radius: 10px
+}
+
+.input-form [placeholder] {
+        color: var(--gray);
+    }
+
+.btn {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    font-size: var(--lg);
+    color: var(--white);
+    font-weight: var(--bold);
+    background-color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+
+
+
+
+/**
+* Layouts base
+**/
+
+.auth-views {
+    width: 100%;
+    min-height: 100vh
+}
+
+.auth-views .auth-views__container {
+        margin: 80px 16px
+    }
+
+.auth-views .auth-views__container .header-auth {
+            width: 100%
+        }
+
+.auth-views .auth-views__container .header-auth figure {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center
+            }
+
+.auth-views .auth-views__container .header-auth figure img {
+                    margin: 0 auto;
+                    margin-bottom: 80px;
+                }
+
+.auth-views .auth-views__container .form-auth div {
+                display: flex;
+                flex-direction: column
+            }
+
+.auth-views .auth-views__container .form-auth div input, .auth-views .auth-views__container .form-auth div label {
+                    margin-bottom: 16px; 
+                }
+
+.auth-views .auth-views__container .form-auth button {
+                margin-top: 16px;
+            }
+
+/**
+* Set password styles
+**/
+
+.setPassword .setPassword__description h3 {
+            margin-bottom: 16px;
+            font-size: var(--lg);
+            font-weight: var(--bold);
+            text-align: center;
+        }
+
+.setPassword .setPassword__description p {
+            margin-bottom: 40px;
+            font-size: var(--lg);
+            font-weight: var(--regular);
+            text-align: center;
+            color: var(--gray);
+        }

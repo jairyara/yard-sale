@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Project frontend development",
   "scripts": {
-    "css": "postcss src/css/style.pcss -o public/css/style.css",
-    "css-watch": "postcss --watch src/css/style.pcss -o public/css/style.css"
+    "css": "npx postcss src/css/style.pcss -o public/css/style.css",
+    "css-watch": "npx postcss --watch src/css/style.pcss -o public/css/style.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
