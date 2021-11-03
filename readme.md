@@ -1,4 +1,4 @@
-#Yard Sale
+# Yard Sale
 
 E-commerce for yard sale in your neighborhood.
 
