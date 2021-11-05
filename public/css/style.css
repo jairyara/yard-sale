@@ -71,18 +71,21 @@ body {
     height: 60px;
     cursor: pointer;
     border-radius: 10px;
+    font-size: var(--lg);
 }
 
 .btn-primary {
-    font-size: var(--lg);
     color: var(--white);
     font-weight: var(--bold);
     background-color: var(--hospital-green);
     border: 1px solid var(--hospital-green);
 }
 
-
-
+.btn-secondary {
+    color: var(--hospital-green);
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+}
 
 /**
 * Layouts base
@@ -124,6 +127,13 @@ body {
 
 .auth-views .auth-views__container .form-auth button {
                 margin-top: 16px;
+            }
+
+.auth-views .auth-views__container .form-auth .forgot-pass {
+                font-size: var(--sm);
+                text-decoration: none;
+                text-align: center;
+                color: var(--hospital-green);
             }
 
 /**
@@ -184,3 +194,30 @@ body {
                     color: var(--hospital-green);
                     text-decoration: none;
                 }
+
+/**
+* Login
+**/
+
+.login .login__form .login__form--recovery {
+            margin-top: 30px;
+        }
+
+.login .login__signUp {
+        width: 100%;
+        padding: 0 16px 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+
+
+
+@media screen and (min-width: 900px) {
+        .login .login__signUp {
+            position: initial;
+            margin-top: 60px;
+        }
+}

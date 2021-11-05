@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/style.css">
-    <title>Login - Yard sale</title>
+    <title>Create password - Yard sale</title>
   </head>
   <body>
-    <article>
-      <header>
-        <figure>
-          <img src="../src/assets/logos/logo_yard_sale.svg" alt="Yard Sale Logo" />
-        </figure>
-      </header>
-      <form method="GET">
-        <div>
-          <label for="email">Email address</label>
-          <input
-            id="email" name="email" type="email" placeholder="camilayokoo@gmail.com" required />
+      <article class="auth-views">
+        <div class="login auth-views__container">
+          <header class="login__header header-auth">
+            <figure class="login__header--imgContainer">
+              <img class="login__header--imgContainer-img" src="../src/assets/logos/logo_yard_sale.svg" alt="Yard Sale Logo" />
+            </figure>
+          </header>
+
+         
+          <form method="POST" class="login__form form-auth">
+            <div>
+                <label class="label-form" for="user">Email address</label>
+                <input class="input-form" id="user" name="user" type="text" placeholder="camilayokoo@gmail.com" required/>
+            </div>
+            <div>
+                <label class="label-form" for="password">Confirm password</label>
+                <input class="input-form" id="password" name="password" type="password" placeholder="*************" required/>
+            </div>
+            <button class="btn btn-primary">Login</button>
+            <div class="login__form--recovery">
+              <a class="forgot-pass" href="">Forgot my password</a>
+            </div>
+          </form>
+
+          <div class="login__signUp">
+            <button class="btn btn-secondary">Sign up</button>
+          </div>
+
         </div>
-        <div>
-          <label for="password">Password</label>
-          <input id="password" name="password" type="password" placeholder="*************" required/>
-        </div>
-        <button>Log in</button>
-        <a href="">Forgot my password</a>
-      </form>
-      <footer>
-          <button>Sign up</button>
-      </footer>
-    </article>
+      </article>
   </body>
 </html>
