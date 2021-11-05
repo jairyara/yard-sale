@@ -94,7 +94,7 @@ body {
 }
 
 .auth-views .auth-views__container {
-        margin: 80px 16px
+        padding: 80px 16px
     }
 
 .auth-views .auth-views__container .header-auth {
@@ -144,3 +144,43 @@ body {
             text-align: center;
             color: var(--gray);
         }
+
+/**
+* Sent email
+**/
+
+.sentEmail .sentEmail__description .sentEmail__description--title {
+            margin-bottom: 16px;
+            font-size: var(--lg);
+            font-weight: var(--bold);
+            text-align: center;
+        }
+
+.sentEmail .sentEmail__description .sentEmail__description--body {
+            margin-bottom: 40px;
+            font-size: var(--lg);
+            font-weight: var(--regular);
+            text-align: center;
+            color: var(--gray);
+        }
+
+.sentEmail .sentEmail__description .sentEmail__description--figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+.sentEmail .sentEmail__description button {
+            margin-bottom: 30px;
+        }
+
+.sentEmail .sentEmail__description .sentEmail__description--link p {
+                font-size: var(--sm);
+                text-align: center
+            }
+
+.sentEmail .sentEmail__description .sentEmail__description--link p a {
+                    color: var(--hospital-green);
+                    text-decoration: none;
+                }

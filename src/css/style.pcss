@@ -93,7 +93,7 @@ body {
     min-height: 100vh;
 
     & .auth-views__container {
-        margin: 80px 16px;
+        padding: 80px 16px;
 
         & .header-auth {
             width: 100%;
@@ -151,4 +151,54 @@ body {
             color: var(--gray);
         }
     }
+}
+
+/**
+* Sent email
+**/
+
+.sentEmail {
+
+    & .sentEmail__description {
+
+        & .sentEmail__description--title {
+            margin-bottom: 16px;
+            font-size: var(--lg);
+            font-weight: var(--bold);
+            text-align: center;
+        }
+
+        & .sentEmail__description--body {
+            margin-bottom: 40px;
+            font-size: var(--lg);
+            font-weight: var(--regular);
+            text-align: center;
+            color: var(--gray);
+        }
+
+        & .sentEmail__description--figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        & button {
+            margin-bottom: 30px;
+        }
+
+        & .sentEmail__description--link {
+            & p {
+                font-size: var(--sm);
+                text-align: center;
+
+                & a {
+                    color: var(--hospital-green);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
 }
