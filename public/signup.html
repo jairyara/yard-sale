@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Create password - Yard sale</title>
+  </head>
+  <body>
+      <article class="auth-views">
+        <div class="setPassword auth-views__container">
+          
+
+          <section class="setPassword__description">
+            <h3 class="setPassword__description--title">Create a new account</h3
+          </section>
+          <form method="POST" class="setPassword__form form-auth">
+            <div>
+                <label class="label-form" for="name">Name</label>
+                <input class="input-form" id="name" name="name" type="text" placeholder="Camila Yokoo" required/>
+            </div>
+            <div>
+                <label class="label-form" for="email">Email address</label>
+                <input class="input-form" id="email" name="email" type="text" placeholder="camilayokoo@gmail.com" required/>
+            </div>
+            <div>
+                <label class="label-form" for="password">Password</label>
+                <input class="input-form" id="password" name="password" type="password" placeholder="*************" required/>
+            </div>
+            <button class="btn btn-primary">Create</button>
+          </form>
+        </div>
+      </article>
+  </body>
+</html>
